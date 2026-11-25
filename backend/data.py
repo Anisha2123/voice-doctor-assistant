@@ -43,7 +43,7 @@ _seed()
 
 
 def label(t: str) -> str:
-    return datetime.strptime(t, "%H:%M").strftime("%-I:%M %p")
+    return datetime.strptime(t, "%H:%M").strftime("%I:%M %p").lstrip("0")
 
 
 def doctor(doctor_id: str):
